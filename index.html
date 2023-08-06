@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form.</p>
+    <form action="#">
+        <fieldset>
+            <label>Enter First Name: <input type="text" name="firstName" required></label>
+            <label>Enter Last Name: <input type="text" name="lastName" required></label>
+            <label>Enter Email Address: <input type="email" name="email" required></label>
+        </fieldset>
+        <fieldset>
+            <label><input class="inline" type="radio" name="account-type">Personal Account</label>
+            <label><input class="inline" type="radio" name="account-type">Business Partner Account</label>
+            <label><input class="inline" type="checkbox" name="terms">Terms and Conditions</label>
+        </fieldset>
+        <fieldset>
+            <label>Upload a profile picture: <input type="file" name="fileUpload"></label>
+            <label>Input your age (years): <input type="number" name="age" min="13" max="120" id=""></label>
+            <label>
+                How did you hear about us?
+                <select name="referrer">
+                    <option value="">(Select one)</option>
+                    <option value="1">News</option>
+                    <option value="2">Blog</option>
+                    <option value="3">Forum</option>
+                    <option value="4">Others</option>
+                </select>
+            </label>
+            <label>
+                Provide a Bio:
+                <textarea name="bio" id="" cols="30" rows="10" placeholder="I like coding during rainy days"></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
